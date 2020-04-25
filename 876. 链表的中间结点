@@ -1,0 +1,17 @@
+struct ListNode* middleNode(struct ListNode* head)
+{
+	int i,k=0;
+	struct ListNode* p=head;
+	while(p)
+	{
+		k++;
+		p=p->next;
+	 } 
+	 p=head;
+	i=k/2;
+	while(i--)
+	{
+		p=p->next;
+	}
+	return p;
+ }
